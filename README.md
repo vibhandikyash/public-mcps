@@ -22,7 +22,15 @@ cd resume-parser-mcp && npm install && npm test
 cd git-insights-mcp && npm install && npm test
 ```
 
-CI runs lint + typecheck + tests on every PR. Publishing happens on `v*.*.*` tags via GitHub Actions.
+CI runs lint + typecheck + tests on every PR. Publishing happens on `<pkg>@x.y.z` tags via GitHub Actions.
+
+## Testing
+
+See [TESTING.md](./TESTING.md) for the four ways to test these servers — automated suite, MCP Inspector, real client integration (Claude Desktop / Cursor / Continue / Windsurf), and raw stdio for protocol-level debugging.
+
+## Roadmap
+
+See [TODO.md](./TODO.md) for what's left before these are fully shipped (GitHub push, npm publish, awesome-list PRs, smithery listing) and the next-version backlog for each package.
 
 ## License
 
