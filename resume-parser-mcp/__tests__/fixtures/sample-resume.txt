@@ -1,0 +1,36 @@
+Priya Sharma
+priya.sharma@example.com | +91 98765 43210 | Bengaluru, IN
+https://github.com/priyasharma | https://linkedin.com/in/priyasharma
+
+SUMMARY
+Senior backend engineer with 6+ years building distributed systems on AWS. Passionate about
+developer experience, observability, and pragmatic API design.
+
+EXPERIENCE
+Senior Backend Engineer — Acme Cloud
+Jan 2022 - Present
+- Designed and shipped a multi-tenant billing pipeline processing 40M events/day on Kafka and PostgreSQL
+- Reduced p99 API latency from 480ms to 110ms by introducing Redis caching and connection pooling
+- Mentored 4 junior engineers and ran the team's on-call rotation
+
+Software Engineer — Northwind Labs
+Aug 2019 - Dec 2021
+- Built a GraphQL gateway in Node.js and TypeScript serving 12 internal services
+- Migrated legacy monolith to Kubernetes on AWS EKS, cutting deploy times by 70%
+
+EDUCATION
+B.S. in Computer Science
+Indian Institute of Technology, Bombay
+2015 - 2019
+
+SKILLS
+TypeScript, Node.js, Python, Go, PostgreSQL, Redis, Kafka, Docker, Kubernetes, AWS, Terraform,
+GraphQL, REST, gRPC, GitHub Actions, Datadog
+
+PROJECTS
+Open Telemetry Collector for IoT
+Built a lightweight OTel collector in Rust for resource-constrained devices.
+
+CERTIFICATIONS
+AWS Certified Solutions Architect - Associate
+Certified Kubernetes Administrator (CKA)
