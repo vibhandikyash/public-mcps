@@ -7,7 +7,7 @@ The code is done and committed locally. What's left is publish, distribute, and 
 ### 1. Push the repo to GitHub
 
 ```bash
-gh repo create yashvibhandik/public-mcps --public --source=. --push --description "Two public MCP servers: resume-parser-mcp and git-insights-mcp"
+gh repo create vibhandikyash/public-mcps --public --source=. --push --description "Two public MCP servers: resume-parser-mcp and git-insights-mcp"
 ```
 
 If `gh` isn't authenticated yet: `gh auth login`.
@@ -21,11 +21,11 @@ npm view resume-parser-mcp || echo "available"
 npm view git-insights-mcp  || echo "available"
 ```
 
-If either name is taken, fall back to `@yashvibhandik/resume-parser-mcp` / `@yashvibhandik/git-insights-mcp` and update both `package.json` files accordingly.
+If either name is taken, fall back to `@vibhandikyash/resume-parser-mcp` / `@vibhandikyash/git-insights-mcp` and update both `package.json` files accordingly.
 
 ### 3. Wire up npm publishing
 
-- Generate an automation-scoped npm token at https://www.npmjs.com/settings/yashvibhandik/tokens
+- Generate an automation-scoped npm token at https://www.npmjs.com/settings/vibhandikyash/tokens
 - Add it as a repo secret: `gh secret set NPM_TOKEN`
 - Cut the first release of each package by tagging from `main`:
 
@@ -60,8 +60,8 @@ The two main community-curated lists. Submit a PR to each once the npm packages 
 Suggested entry shape (match the surrounding format in each list):
 
 ```md
-- [resume-parser-mcp](https://github.com/yashvibhandik/public-mcps/tree/main/resume-parser-mcp) — Parse PDF/DOCX/text resumes to structured JSON, extract skills, and score against job descriptions.
-- [git-insights-mcp](https://github.com/yashvibhandik/public-mcps/tree/main/git-insights-mcp) — Local-git analytics: contributors, file churn, ownership maps, conventional-commit changelogs.
+- [resume-parser-mcp](https://github.com/vibhandikyash/public-mcps/tree/main/resume-parser-mcp) — Parse PDF/DOCX/text resumes to structured JSON, extract skills, and score against job descriptions.
+- [git-insights-mcp](https://github.com/vibhandikyash/public-mcps/tree/main/git-insights-mcp) — Local-git analytics: contributors, file churn, ownership maps, conventional-commit changelogs.
 ```
 
 ### 6. List on smithery.ai
@@ -100,7 +100,7 @@ https://smithery.ai/new — one listing per package, point at the GitHub repo. S
 
 ## Definition of done
 
-- [ ] Repo public on GitHub at `yashvibhandik/public-mcps`
+- [ ] Repo public on GitHub at `vibhandikyash/public-mcps`
 - [ ] Both packages published on npm
 - [ ] `npx -y resume-parser-mcp` runs from a clean machine
 - [ ] `npx -y git-insights-mcp` runs from a clean machine

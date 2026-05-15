@@ -38,4 +38,4 @@ MIT — see [LICENSE](./LICENSE).
 
 ## Author
 
-Yashvi Bhandik · [github.com/yashvibhandik](https://github.com/yashvibhandik)
+Yashvi Bhandik · [github.com/vibhandikyash](https://github.com/vibhandikyash)

@@ -39,13 +39,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yashvibhandik/public-mcps.git",
+    "url": "git+https://github.com/vibhandikyash/public-mcps.git",
     "directory": "resume-parser-mcp"
   },
   "bugs": {
-    "url": "https://github.com/yashvibhandik/public-mcps/issues"
+    "url": "https://github.com/vibhandikyash/public-mcps/issues"
   },
-  "homepage": "https://github.com/yashvibhandik/public-mcps/tree/main/resume-parser-mcp",
+  "homepage": "https://github.com/vibhandikyash/public-mcps/tree/main/resume-parser-mcp",
   "engines": {
     "node": ">=20"
   },

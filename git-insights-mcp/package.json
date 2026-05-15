@@ -38,13 +38,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yashvibhandik/public-mcps.git",
+    "url": "git+https://github.com/vibhandikyash/public-mcps.git",
     "directory": "git-insights-mcp"
   },
   "bugs": {
-    "url": "https://github.com/yashvibhandik/public-mcps/issues"
+    "url": "https://github.com/vibhandikyash/public-mcps/issues"
   },
-  "homepage": "https://github.com/yashvibhandik/public-mcps/tree/main/git-insights-mcp",
+  "homepage": "https://github.com/vibhandikyash/public-mcps/tree/main/git-insights-mcp",
   "engines": {
     "node": ">=20"
   },
