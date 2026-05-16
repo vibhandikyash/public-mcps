@@ -1,0 +1,71 @@
+{
+  "name": "pii-scrubber-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that detects and redacts personally identifiable information (PII) — emails, phones, credit cards, SSNs, API keys, JWTs, private keys and more — from text, PDF, and DOCX. Ships HIPAA / GDPR / PCI policy presets and five redaction strategies (mask, replace, hash, fake, remove).",
+  "type": "module",
+  "bin": {
+    "pii-scrubber-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "pii",
+    "privacy",
+    "redaction",
+    "scrubber",
+    "anonymisation",
+    "anonymization",
+    "hipaa",
+    "gdpr",
+    "pci",
+    "compliance",
+    "ai",
+    "llm"
+  ],
+  "author": "Yashvi Bhandik",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vibhandikyash/public-mcps.git",
+    "directory": "pii-scrubber-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/vibhandikyash/public-mcps/issues"
+  },
+  "homepage": "https://github.com/vibhandikyash/public-mcps/tree/main/pii-scrubber-mcp",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "mammoth": "^1.8.0",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/pdf-parse": "^1.1.4",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9.17.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

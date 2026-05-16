@@ -19,9 +19,10 @@ Check availability:
 ```bash
 npm view resume-parser-mcp || echo "available"
 npm view git-insights-mcp  || echo "available"
+npm view pii-scrubber-mcp  || echo "available"
 ```
 
-If either name is taken, fall back to `@vibhandikyash/resume-parser-mcp` / `@vibhandikyash/git-insights-mcp` and update both `package.json` files accordingly.
+If any name is taken, fall back to `@vibhandikyash/<name>` and update the matching `package.json` accordingly.
 
 ### 3. Wire up npm publishing
 
@@ -32,6 +33,7 @@ If either name is taken, fall back to `@vibhandikyash/resume-parser-mcp` / `@vib
 ```bash
 git tag resume-parser-mcp@0.1.0
 git tag git-insights-mcp@0.1.0
+git tag pii-scrubber-mcp@0.1.0
 git push --tags
 ```
 
@@ -44,6 +46,7 @@ After publish, test the published artefacts the way a user would:
 ```bash
 npx -y resume-parser-mcp < /dev/null   # should print nothing, exit when stdin closes
 npx -y git-insights-mcp  < /dev/null
+npx -y pii-scrubber-mcp  < /dev/null
 ```
 
 Then plug the `npx` invocation into Claude Desktop / Cursor (snippets in each package's README) and run a real query to confirm end-to-end.
@@ -62,6 +65,7 @@ Suggested entry shape (match the surrounding format in each list):
 ```md
 - [resume-parser-mcp](https://github.com/vibhandikyash/public-mcps/tree/main/resume-parser-mcp) — Parse PDF/DOCX/text resumes to structured JSON, extract skills, and score against job descriptions.
 - [git-insights-mcp](https://github.com/vibhandikyash/public-mcps/tree/main/git-insights-mcp) — Local-git analytics: contributors, file churn, ownership maps, conventional-commit changelogs.
+- [pii-scrubber-mcp](https://github.com/vibhandikyash/public-mcps/tree/main/pii-scrubber-mcp) — Detect and redact PII (emails, phones, cards, SSNs, API keys, more) with HIPAA / GDPR / PCI policy presets.
 ```
 
 ### 6. List on smithery.ai
@@ -101,9 +105,10 @@ https://smithery.ai/new — one listing per package, point at the GitHub repo. S
 ## Definition of done
 
 - [ ] Repo public on GitHub at `vibhandikyash/public-mcps`
-- [ ] Both packages published on npm
+- [ ] All three packages published on npm
 - [ ] `npx -y resume-parser-mcp` runs from a clean machine
 - [ ] `npx -y git-insights-mcp` runs from a clean machine
+- [ ] `npx -y pii-scrubber-mcp` runs from a clean machine
 - [ ] CI green on `main`
 - [ ] Listed in at least one `awesome-mcp-servers` repo
 - [ ] One screen-recorded demo published to a public channel

@@ -12,5 +12,5 @@ git push
 ```
 
 The two workflows are:
-- `ci.yml` — matrix of `{resume-parser-mcp, git-insights-mcp}` × `{Node 20, Node 22}`, runs `lint + typecheck + test + build` on every push/PR.
+- `ci.yml` — matrix of `{resume-parser-mcp, git-insights-mcp, pii-scrubber-mcp}` × `{Node 20, Node 22}`, runs `lint + typecheck + test + build` on every push/PR.
 - `publish.yml` — triggers on tags `<pkg>@x.y.z`, verifies the tag matches package.json, runs the full suite, and `npm publish --access public --provenance`.
